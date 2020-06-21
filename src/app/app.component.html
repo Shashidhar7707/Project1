@@ -1,5 +1,11 @@
 <h1>{{ title }}!</h1>
-<app-componentone></app-componentone>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/componentone">Heroes</a>
+</nav>
+<!-- <app-componentone></app-componentone>//router-outlet tells the router where to display routed views
+app-componentone is no longer needed because the app will only dispaly the app-componentone when user navigates to it -->
+<router-outlet></router-outlet>  
 <app-messages></app-messages>
 
 
